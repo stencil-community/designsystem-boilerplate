@@ -1,5 +1,6 @@
 import { Config } from '@stencil/core';
 import { angularOutputTarget } from '@stencil/angular-output-target';
+import { reactOutputTarget } from '@stencil/react-output-target';
 
 export const config: Config = {
   namespace: 'core',
@@ -18,6 +19,9 @@ export const config: Config = {
       outputType: 'standalone',
       directivesProxyFile: '../angular-workspace/projects/angular/src/lib/standalone/components.ts',
       directivesArrayFile: '../angular-workspace/projects/angular/src/lib/standalone/index.ts',
+    }),
+    reactOutputTarget({
+      outDir: '../react/src',
     }),
     {
       type: 'docs-readme',
