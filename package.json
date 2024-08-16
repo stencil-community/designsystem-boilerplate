@@ -1,0 +1,23 @@
+{
+  "name": "designsystem-boilerplate",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stencil-community/designsystem-boilerplate.git"
+  },
+  "keywords": [
+    "stencil",
+    "component library",
+    "ionic"
+  ],
+  "author": "",
+  "description": "A sample monorepo repository for orgnizations looking to create their own stencil-based component library",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.14.2",
+    "typescript": "^5.4.5"
+  }
+}
