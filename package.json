@@ -1,6 +1,7 @@
 {
   "name": "designsystem-boilerplate",
   "version": "0.0.1",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,6 +19,7 @@
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.14.2",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "@placid/react": "workspace:*"
   }
 }

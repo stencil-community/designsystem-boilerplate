@@ -9,6 +9,7 @@
     ],
     "declaration": true,
     "declarationDir": "dist",
+    "outDir": "dist",
     "moduleResolution": "Bundler",
     "module": "esnext",
     "target": "es2022",

@@ -8,19 +8,29 @@
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
   "unpkg": "dist/core/core.esm.js",
+  "type": "module",
   "exports": {
     ".": {
       "import": "./dist/core/core.esm.js",
       "require": "./dist/core/core.cjs.js"
     },
+    "./components": {
+      "import": "./components/index.js",
+      "types": "./components/index.d.ts"
+    },
     "./components/my-component.js": {
-      "import": "./dist/components/my-component.js",
-      "types": "./dist/components/my-component.d.ts"
+      "import": "./components/my-component.js",
+      "types": "./components/my-component.d.ts"
     },
     "./loader": {
       "import": "./loader/index.js",
       "require": "./loader/index.cjs",
       "types": "./loader/index.d.ts"
+    },
+    "./hydrate": {
+      "import": "./hydrate/index.mjs",
+      "require": "./hydrate/index.js",
+      "types": "./hydrate/index.d.ts"
     }
   },
   "repository": {
@@ -40,8 +50,8 @@
   },
   "devDependencies": {
     "@stencil/angular-output-target": "^0.8.4",
-    "@stencil/react-output-target": "^0.6.0",
-    "@stencil/core": "^4.7.0",
+    "@stencil/react-output-target": "0.0.1-dev.11724176899.11a0efb7",
+    "@stencil/core": "4.20.0-dev.1724130099.958c826",
     "@types/jest": "^29.5.6",
     "@types/node": "^16.18.98",
     "@types/react": "^18.3.3",

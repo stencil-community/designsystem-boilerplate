@@ -2,14 +2,11 @@
   "name": "@placid/react",
   "version": "0.0.1",
   "description": "Stencil Component Starter",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.js",
-  "types": "dist/types/index.d.ts",
-  "unpkg": "dist/core/core.esm.js",
+  "type": "module",
   "exports": {
     ".": {
-      "import": "./dist/react.mjs",
-      "types": "./dist/index.d.ts"
+      "import": "./dist/components.js",
+      "types": "./dist/components.d.ts"
     }
   },
   "repository": {
@@ -17,21 +14,18 @@
     "url": "https://github.com/ionic-team/stencil-component-starter.git"
   },
   "scripts": {
-    "build": "vite build"
+    "build": "tsc -p tsconfig.json"
   },
   "devDependencies": {
     "@types/node": "^20.14.2",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "vite-plugin-dts": "^4.0.3",
-    "@vitejs/plugin-react": "^4.3.1",
-    "typescript": "^5.5.4",
-    "vite": "^5.4.1"
+    "typescript": "^5.5.4"
   },
   "license": "MIT",
   "dependencies": {
     "@placid/core": "workspace:*",
-    "@stencil/react-output-target": "^0.6.0",
+    "@stencil/react-output-target": "0.0.1-dev.11724176899.11a0efb7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   }

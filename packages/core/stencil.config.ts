@@ -13,6 +13,7 @@ export const config: Config = {
       type: 'dist-custom-elements',
       customElementsExportBehavior: 'single-export-module',
       externalRuntime: false,
+      dir: 'components',
     },
     angularOutputTarget({
       componentCorePackage: '@placid/core',
@@ -22,6 +23,7 @@ export const config: Config = {
     }),
     reactOutputTarget({
       outDir: '../react/src',
+      hydrateModule: '@placid/core/hydrate',
     }),
     {
       type: 'docs-readme',
@@ -29,6 +31,10 @@ export const config: Config = {
     {
       type: 'www',
       serviceWorker: null, // disable service workers
+    },
+    {
+      type: 'dist-hydrate-script',
+      dir: './hydrate',
     },
   ],
   testing: {
