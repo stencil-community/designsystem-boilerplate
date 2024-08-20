@@ -8,15 +8,9 @@ importers:
 
   .:
     devDependencies:
-      '@placid/react':
-        specifier: workspace:*
-        version: link:packages/react
-      '@types/node':
-        specifier: ^20.14.2
-        version: 20.14.2
-      typescript:
-        specifier: ^5.4.5
-        version: 5.4.5
+      npm-run-all2:
+        specifier: ^6.2.2
+        version: 6.2.2
 
   apps/demo-angular:
     dependencies:
@@ -163,8 +157,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/react
       '@stencil/react-output-target':
-        specifier: 0.0.1-dev.11724176899.11a0efb7
-        version: 0.0.1-dev.11724176899.11a0efb7(@stencil/core@4.20.0-dev.1724130099.958c826)(@types/react@18.3.3)(react@18.3.1)
+        specifier: 0.0.1-dev.11724191071.12bc82c8
+        version: 0.0.1-dev.11724191071.12bc82c8(@stencil/core@4.20.0-dev.1724130099.958c826)(@types/react@18.3.3)(react@18.3.1)
       next:
         specifier: 14.2.5
         version: 14.2.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.5)
@@ -337,8 +331,8 @@ importers:
         specifier: 4.20.0-dev.1724130099.958c826
         version: 4.20.0-dev.1724130099.958c826
       '@stencil/react-output-target':
-        specifier: 0.0.1-dev.11724176899.11a0efb7
-        version: 0.0.1-dev.11724176899.11a0efb7(@stencil/core@4.20.0-dev.1724130099.958c826)(@types/react@18.3.3)(react@18.3.1)
+        specifier: 0.0.1-dev.11724191071.12bc82c8
+        version: 0.0.1-dev.11724191071.12bc82c8(@stencil/core@4.20.0-dev.1724130099.958c826)(@types/react@18.3.3)(react@18.3.1)
       '@types/jest':
         specifier: ^29.5.6
         version: 29.5.12
@@ -380,8 +374,8 @@ importers:
         specifier: workspace:*
         version: link:../core
       '@stencil/react-output-target':
-        specifier: 0.0.1-dev.11724176899.11a0efb7
-        version: 0.0.1-dev.11724176899.11a0efb7(@stencil/core@4.20.0-dev.1724130099.958c826)(@types/react@18.3.3)(react@18.3.1)
+        specifier: 0.0.1-dev.11724191071.12bc82c8
+        version: 0.0.1-dev.11724191071.12bc82c8(@stencil/core@4.20.0-dev.1724130099.958c826)(@types/react@18.3.3)(react@18.3.1)
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -2820,8 +2814,8 @@ packages:
     engines: {node: '>=16.0.0', npm: '>=7.10.0'}
     hasBin: true
 
-  '@stencil/react-output-target@0.0.1-dev.11724176899.11a0efb7':
-    resolution: {integrity: sha512-z3VJrnN/upxkYqW+TCdW4sRmKP9wwPRLvIasyamuRjVuaM6/ygnyZ625yp/Qmu90mF0eCJHrz/mrtPx8PuEpQQ==}
+  '@stencil/react-output-target@0.0.1-dev.11724191071.12bc82c8':
+    resolution: {integrity: sha512-Q3JUYIbkCdVO+4T8oacVZ4Ovg37OTdMBR2Zf7zaqKX6xvHnnfCVgdwjYihwytAvcF6KvQ5J30mLrCwyiK2n95g==}
     peerDependencies:
       '@stencil/core': '>=3 || >= 4.0.0-beta.0 || >= 4.0.0'
 
@@ -5870,6 +5864,10 @@ packages:
     resolution: {integrity: sha512-bsYSSnirtYTWi1+OPMFb0M048evMKyUYe0EbtuGQgq6BVQM1g1W8/KIUJCCvjgI/El0j6Q4WsmMiBwLUBSw8LA==}
     engines: {node: '>= 4.0.0'}
 
+  memorystream@0.3.1:
+    resolution: {integrity: sha512-S3UwM3yj5mtUSEfP41UZmt/0SCoVYUcU1rkXv+BQ5Ig8ndL4sPoJNBUJERafdPb5jjHJGuMgytgKvKIf58XNBw==}
+    engines: {node: '>= 0.10.0'}
+
   merge-descriptors@1.0.1:
     resolution: {integrity: sha512-cCi6g3/Zr1iqQi6ySbseM1Xvooa98N0w31jzUYrXPX2xqObmFGHJ0tQ5u74H3mVh7wLouTseZyYIq39g8cNp1w==}
 
@@ -6248,6 +6246,11 @@ packages:
     resolution: {integrity: sha512-5+bKQRH0J1xG1uZ1zMNvxW0VEyoNWgJpY9UDuluPFLKDfJ9u2JmmjmTJV1srBGQOROfdBMiVvnH2Zvpbm+xkVA==}
     engines: {node: ^16.14.0 || >=18.0.0}
 
+  npm-run-all2@6.2.2:
+    resolution: {integrity: sha512-Q+alQAGIW7ZhKcxLt8GcSi3h3ryheD6xnmXahkMRVM5LYmajcUrSITm8h+OPC9RYWMV2GR0Q1ntTUCfxaNoOJw==}
+    engines: {node: ^14.18.0 || ^16.13.0 || >=18.0.0, npm: '>= 8'}
+    hasBin: true
+
   npm-run-path@4.0.1:
     resolution: {integrity: sha512-S48WzZW777zhNIrn7gxOlISNAqi9ZC/uQFnRdbeIHhZhCA6UqpkOT8T1G7BvfdgP4Er8gF4sUbaS0i7QvIfCWw==}
     engines: {node: '>=8'}
@@ -6506,6 +6509,11 @@ packages:
   picomatch@4.0.2:
     resolution: {integrity: sha512-M7BAV6Rlcy5u+m6oPhAPFgJTzAioX/6B0DxyvDlo9l8+T3nLKbrczg2WLUyzd45L8RqfUMyGPzekbMvX2Ldkwg==}
     engines: {node: '>=12'}
+
+  pidtree@0.6.0:
+    resolution: {integrity: sha512-eG2dWTVw5bzqGRztnHExczNxt5VGsE6OwTeCG3fdUf9KBsZzO3R5OIIIzWR+iZA0NtZ+RDVdaoE2dK1cn6jH4g==}
+    engines: {node: '>=0.10'}
+    hasBin: true
 
   pify@2.3.0:
     resolution: {integrity: sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==}
@@ -11613,7 +11621,7 @@ snapshots:
 
   '@stencil/core@4.20.0-dev.1724130099.958c826': {}
 
-  '@stencil/react-output-target@0.0.1-dev.11724176899.11a0efb7(@stencil/core@4.20.0-dev.1724130099.958c826)(@types/react@18.3.3)(react@18.3.1)':
+  '@stencil/react-output-target@0.0.1-dev.11724191071.12bc82c8(@stencil/core@4.20.0-dev.1724130099.958c826)(@types/react@18.3.3)(react@18.3.1)':
     dependencies:
       '@lit/react': 1.0.5(@types/react@18.3.3)
       '@stencil/core': 4.20.0-dev.1724130099.958c826
@@ -15763,6 +15771,8 @@ snapshots:
       tree-dump: 1.0.1(tslib@2.6.3)
       tslib: 2.6.3
 
+  memorystream@0.3.1: {}
+
   merge-descriptors@1.0.1: {}
 
   merge-stream@2.0.0: {}
@@ -16195,6 +16205,16 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  npm-run-all2@6.2.2:
+    dependencies:
+      ansi-styles: 6.2.1
+      cross-spawn: 7.0.3
+      memorystream: 0.3.1
+      minimatch: 9.0.4
+      pidtree: 0.6.0
+      read-package-json-fast: 3.0.2
+      shell-quote: 1.8.1
+
   npm-run-path@4.0.1:
     dependencies:
       path-key: 3.1.1
@@ -16547,6 +16567,8 @@ snapshots:
   picomatch@4.0.1: {}
 
   picomatch@4.0.2: {}
+
+  pidtree@0.6.0: {}
 
   pify@2.3.0: {}
 

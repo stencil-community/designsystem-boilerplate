@@ -1,9 +1,17 @@
 {
   "name": "designsystem-boilerplate",
+  "author": "Outsystems",
+  "description": "A sample monorepo repository for orgnizations looking to create their own stencil-based component library",
   "version": "0.0.1",
+  "license": "MIT",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "run-s build:*",
+    "build:core": "pnpm --filter @placid/core run build",
+    "build:frameworks": "pnpm --filter @placid/react --filter angular-workspace run build",
+    "start:react": "pnpm --filter @apps/react run start",
+    "start:next": "pnpm --filter @apps/next run start",
+    "start:angular": "pnpm --filter @apps/angular run start"
   },
   "repository": {
     "type": "git",
@@ -14,12 +22,7 @@
     "component library",
     "ionic"
   ],
-  "author": "",
-  "description": "A sample monorepo repository for orgnizations looking to create their own stencil-based component library",
-  "license": "MIT",
   "devDependencies": {
-    "@types/node": "^20.14.2",
-    "typescript": "^5.4.5",
-    "@placid/react": "workspace:*"
+    "npm-run-all2": "^6.2.2"
   }
 }

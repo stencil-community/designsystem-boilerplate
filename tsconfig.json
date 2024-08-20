@@ -28,7 +28,8 @@
       "verbatimModuleSyntax": true,
   
       /* Language and Environment */
-      "target": "ES2017",
+      "target": "ES2021",
+      "moduleResolution": "Bundler",
   
       /* Projects */
       "incremental": true,
@@ -36,6 +37,6 @@
       /* Completeness */
       "skipLibCheck": true
     },
-    "include": ["src/**/*"],
+    "include": ["packages/**/*"],
     "exclude": ["**/node_modules"]
   }

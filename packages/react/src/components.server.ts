@@ -9,13 +9,13 @@
 /* eslint-disable */
 
 import { MyComponent as MyComponentElement, defineCustomElement as defineMyComponent } from "@placid/core/components/my-component.js";
+import type { StencilReactComponent } from '@stencil/react-output-target/runtime';
 import { createComponent, createSSRComponent } from '@stencil/react-output-target/runtime';
 import React from 'react';
 
 type MyComponentEvents = NonNullable<unknown>;
 
-// @ts-ignore
-export const MyComponent: ReactWebComponent<MyComponentElement, {}> = typeof window !== 'undefined'
+export const MyComponent: StencilReactComponent<MyComponentElement, MyComponentEvents> = typeof window !== 'undefined'
     ? /*@__PURE__*/ createComponent<MyComponentElement, MyComponentEvents>({
         tagName: 'my-component',
         elementClass: MyComponentElement,

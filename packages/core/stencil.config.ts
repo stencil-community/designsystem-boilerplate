@@ -1,4 +1,4 @@
-import { Config } from '@stencil/core';
+import { type Config } from '@stencil/core';
 import { angularOutputTarget } from '@stencil/angular-output-target';
 import { reactOutputTarget } from '@stencil/react-output-target';
 
