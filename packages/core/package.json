@@ -23,10 +23,9 @@
       "import": "./components/my-component.js",
       "types": "./components/my-component.d.ts"
     },
-    "./loader": {
-      "import": "./loader/index.js",
-      "require": "./loader/index.cjs",
-      "types": "./loader/index.d.ts"
+    "./components/liam-component.js": {
+      "import": "./components/liam-component.js",
+      "types": "./components/liam-component.d.ts"
     },
     "./hydrate": {
       "import": "./hydrate/index.mjs",

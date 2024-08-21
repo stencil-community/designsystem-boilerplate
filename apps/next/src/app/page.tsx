@@ -1,5 +1,7 @@
 import Image from "next/image";
-import { MyComponent } from "@placid/react";
+import { MyComponent, LiamComponent } from "@placid/react";
+
+import './components/SetMode';
 
 export default function Home() {
   return (
@@ -38,8 +40,8 @@ export default function Home() {
           height={37}
           priority
         />
-        <MyComponent first="Stencil" last="'Don't call me a framework' JS">
-        </MyComponent>
+        <MyComponent first="Stencil" last="'Don't call me a framework' JS" />
+        <LiamComponent />
       </div>
 
       <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">

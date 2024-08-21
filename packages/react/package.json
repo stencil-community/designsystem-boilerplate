@@ -7,6 +7,10 @@
     ".": {
       "import": "./dist/components.js",
       "types": "./dist/components.d.ts"
+    },
+    "./utilities": {
+      "import": "./dist/utilities.js",
+      "types": "./dist/utilities.d.ts"
     }
   },
   "repository": {

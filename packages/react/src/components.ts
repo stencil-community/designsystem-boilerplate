@@ -6,4 +6,4 @@
  */
 
 /* eslint-disable */
-export { MyComponent } from "./components.server";
+export { LiamComponent, MyComponent } from "./components.server";
