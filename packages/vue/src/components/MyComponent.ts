@@ -1,5 +1,5 @@
-import { defineComponent } from 'vue'
-import { compile } from 'vue'
+import { defineComponent, useSlots, compile, createSSRApp } from 'vue'
+import { renderToString as vueRenderToString } from 'vue/server-renderer'
 import { defineCustomElementMyComponent } from '@placid/core/components'
 import type { JSX } from '@placid/core'
 
@@ -18,8 +18,13 @@ const MyComponent = /*@__PURE__*/ defineContainer<JSX.MyComponent>('my-component
 ])
 
 export default globalThis.window ? MyComponent : defineComponent({
-  async setup (props) {
+  async setup (props, context) {
     let stringProps = '';
+
+    const slots = useSlots()
+    const ssrLightDom = createSSRApp({ render: () => slots.default() })
+    const renderedLightDom = await vueRenderToString(ssrLightDom, { context })
+
     const { renderToString } = await import('@placid/core/hydrate');
     for (const [key, value] of Object.entries(props)) {
       if (typeof value !== 'string' && typeof value !== 'number' && typeof value !== 'boolean') {
@@ -27,7 +32,7 @@ export default globalThis.window ? MyComponent : defineComponent({
       }
       stringProps += ` ${key}="${value}"`;
     }
-    const toSerialize = `<${options.tagName}${stringProps}></${options.tagName}>`;
+    const toSerialize = `<${options.tagName}${stringProps}>${renderedLightDom}</${options.tagName}>`;
     const { html } = await renderToString(toSerialize, {
       fullDocument: false
     })
