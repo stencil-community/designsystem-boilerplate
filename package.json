@@ -8,8 +8,9 @@
   "scripts": {
     "build": "run-s build:*",
     "build:core": "pnpm --filter @placid/core run build",
-    "build:frameworks": "pnpm --filter @placid/react --filter angular-workspace run build",
+    "build:frameworks": "pnpm --filter @placid/vue --filter @placid/react --filter angular-workspace run build",
     "start:react": "pnpm --filter @apps/react run start",
+    "start:vue": "pnpm --filter @apps/vue run start",
     "start:next": "pnpm --filter @apps/next run start",
     "start:angular": "pnpm --filter @apps/angular run start"
   },

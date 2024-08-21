@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "allowUnreachableCode": false,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": ["dom", "esnext"],
+    "outDir": "dist",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "target": "esnext",
+    "jsx": "react",
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["./__tests__/**", "node_modules"],
+  "compileOnSave": false,
+  "buildOnSave": false
+}

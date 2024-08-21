@@ -1,6 +1,8 @@
 import { type Config } from '@stencil/core';
 import { angularOutputTarget } from '@stencil/angular-output-target';
 import { reactOutputTarget } from '@stencil/react-output-target';
+import { vueOutputTarget } from '@stencil/vue-output-target';
+
 
 export const config: Config = {
   namespace: 'core',
@@ -24,6 +26,10 @@ export const config: Config = {
     reactOutputTarget({
       outDir: '../react/src',
       hydrateModule: '@placid/core/hydrate',
+    }),
+    vueOutputTarget({
+      componentCorePackage: '@placid/core',
+      proxiesFile: '../vue/src/proxies.ts',
     }),
     {
       type: 'docs-readme',

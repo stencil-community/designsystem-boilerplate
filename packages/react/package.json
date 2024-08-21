@@ -1,7 +1,7 @@
 {
   "name": "@placid/react",
   "version": "0.0.1",
-  "description": "Stencil Component Starter",
+  "description": "React wrapper for Stencil component library",
   "type": "module",
   "exports": {
     ".": {

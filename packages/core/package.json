@@ -12,7 +12,8 @@
   "exports": {
     ".": {
       "import": "./dist/core/core.esm.js",
-      "require": "./dist/core/core.cjs.js"
+      "require": "./dist/core/core.cjs.js",
+      "types": "./dist/types/index.d.ts"
     },
     "./components": {
       "import": "./components/index.js",
@@ -51,6 +52,7 @@
   "devDependencies": {
     "@stencil/angular-output-target": "^0.8.4",
     "@stencil/react-output-target": "0.0.1-dev.11724191071.12bc82c8",
+    "@stencil/vue-output-target": "^0.8.9",
     "@stencil/core": "4.20.0-dev.1724130099.958c826",
     "@types/jest": "^29.5.6",
     "@types/node": "^16.18.98",

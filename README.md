@@ -5,6 +5,7 @@ A boilerplate project that showcases the usage of Stencil for building large sca
 
 - [Angular](https://angular.dev/)
 - [React + Vite](https://react.dev/)
+- [Vue + Vite](https://vuejs.org/)
 - [Next.js](https://nextjs.org/)
 
 ## Requirements
@@ -36,12 +37,14 @@ The project is structured in several sub-packages, some are framework wrappers t
 
 - `/packages/core`: your Stencil project that contains raw Stencil components, published as `@placid/core`
 - `/packages/react`: Stencil wrapper for React based projects, e.g. Next.js or React, published as `@placid/react`
+- `/packages/vue`: Stencil wrapper for Vue based projects, published as `@placid/vue`
 - `/packages/angular-workspace/projects/angular`: Stencil wrapper for Angular components, published as `@placid/angular`
 
 You can see how your users can embed the components in our demo apps:
 
 - `/apps/angular`: Angular application
 - `/apps/react`: basic React + Vite Application
+- `/apps/vue`: basic Vue + Vite Application
 - `/apps/next`: Next.js application
 
 ## Scripts
@@ -65,6 +68,8 @@ This project contains example app to test the integration of your Stencil compon
 pnpm run start:angular
 # React
 pnpm run start:react
+# Vue
+pnpm run start:vue
 # Next.js
 pnpm run start:next
 ```
