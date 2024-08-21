@@ -1,0 +1,17 @@
+{
+  "name": "@apps/nuxt",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "start": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@placid/vue": "workspace:*",
+    "nuxt": "^3.12.4",
+    "vue": "latest"
+  }
+}

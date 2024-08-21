@@ -45,7 +45,8 @@ You can see how your users can embed the components in our demo apps:
 - `/apps/angular`: Angular application
 - `/apps/react`: basic React + Vite Application
 - `/apps/vue`: basic Vue + Vite Application
-- `/apps/next`: Next.js application
+- `/apps/next`: Next.js application (with SSR support)
+- `/apps/nuxt`: Nuxt application (with SSR support)
 
 ## Scripts
 
@@ -72,4 +73,6 @@ pnpm run start:react
 pnpm run start:vue
 # Next.js
 pnpm run start:next
+# Nuxt
+pnpm run start:nuxt
 ```
