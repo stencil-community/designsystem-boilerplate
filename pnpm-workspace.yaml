@@ -2,7 +2,7 @@ packages:
   # demo apps will live in the apps directory
   - 'apps/**'
   # stencil packages will live in the packages directory
-  - 'packages/**'
-  - 'packages/angular-workspace/projects/**'
+  - 'packages/*'
+  - 'packages/angular-workspace/dist/**'
   # exclude packages that are inside test directories
   - '!**/test/**'
