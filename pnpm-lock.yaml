@@ -344,21 +344,6 @@ importers:
         specifier: ^2.3.0
         version: 2.6.3
 
-  packages/angular-workspace/projects/angular:
-    dependencies:
-      '@angular/common':
-        specifier: '>=14.3.0'
-        version: 18.0.3(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1)
-      '@angular/core':
-        specifier: '>=14.3.0'
-        version: 18.0.3(rxjs@7.8.1)(zone.js@0.14.7)
-      '@placid/core':
-        specifier: workspace:*
-        version: link:../../../core
-      tslib:
-        specifier: ^2.3.0
-        version: 2.6.3
-
   packages/core:
     devDependencies:
       '@stencil/angular-output-target':
@@ -403,10 +388,6 @@ importers:
       typescript:
         specifier: ^5.5.4
         version: 5.5.4
-
-  packages/core/hydrate: {}
-
-  packages/core/loader: {}
 
   packages/react:
     dependencies:
