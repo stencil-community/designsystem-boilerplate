@@ -6,4 +6,31 @@
  */
 
 /* eslint-disable */
-export { MyComponent, MyCounter } from "./components.server";
+
+import { MyComponent as MyComponentElement, defineCustomElement as defineMyComponent } from "@placid/core/components/my-component.js";
+import { MyCounter as MyCounterElement, defineCustomElement as defineMyCounter } from "@placid/core/components/my-counter.js";
+import type { StencilReactComponent } from '@stencil/react-output-target/runtime';
+import { createComponent } from '@stencil/react-output-target/runtime';
+import React from 'react';
+
+export type MyComponentEvents = NonNullable<unknown>;
+
+export const MyComponent: StencilReactComponent<MyComponentElement, MyComponentEvents> = /*@__PURE__*/ createComponent<MyComponentElement, MyComponentEvents>({
+    tagName: 'my-component',
+    elementClass: MyComponentElement,
+    // @ts-ignore - React type of Stencil Output Target may differ from the React version used in the Nuxt.js project, this can be ignored.
+    react: React,
+    events: {} as MyComponentEvents,
+    defineCustomElement: defineMyComponent
+});
+
+export type MyCounterEvents = NonNullable<unknown>;
+
+export const MyCounter: StencilReactComponent<MyCounterElement, MyCounterEvents> = /*@__PURE__*/ createComponent<MyCounterElement, MyCounterEvents>({
+    tagName: 'my-counter',
+    elementClass: MyCounterElement,
+    // @ts-ignore - React type of Stencil Output Target may differ from the React version used in the Nuxt.js project, this can be ignored.
+    react: React,
+    events: {} as MyCounterEvents,
+    defineCustomElement: defineMyCounter
+});
