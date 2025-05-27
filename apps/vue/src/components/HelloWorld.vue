@@ -17,7 +17,7 @@ defineProps<{ startCount: number }>()
   </header>
   <MyComponent first="Stencil" last="'Don't call me a framework' JS"></MyComponent>
   <div>
-    <MyCounter :startCount={startCount}></MyCounter>
+    <MyCounter :startCount=startCount></MyCounter>
   </div>
   <p>Click on the StencilJS logo to learn more</p>
 </template>

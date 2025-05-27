@@ -13,5 +13,8 @@
     "@placid/vue": "workspace:*",
     "nuxt": "^3.12.4",
     "vue": "latest"
+  },
+  "devDependencies": {
+    "stream-browserify": "^3.0.0"
   }
 }

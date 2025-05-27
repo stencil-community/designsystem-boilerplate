@@ -7,6 +7,7 @@ A boilerplate project that showcases the usage of Stencil for building large sca
 - [React + Vite](https://react.dev/)
 - [Vue + Vite](https://vuejs.org/)
 - [Next.js](https://nextjs.org/)
+- [Storybook](https://storybook.js.org/)
 
 ## Requirements
 
@@ -47,6 +48,7 @@ You can see how your users can embed the components in our demo apps:
 - `/apps/vue`: basic Vue + Vite Application
 - `/apps/next`: Next.js application (with SSR support)
 - `/apps/nuxt`: Nuxt application (with SSR support)
+- `/apps/storybook`: Storybook integration with Stencil
 
 ## Scripts
 
@@ -75,4 +77,6 @@ pnpm run start:vue
 pnpm run start:next
 # Nuxt
 pnpm run start:nuxt
+# Storybook
+pnpm run start:storybook
 ```
