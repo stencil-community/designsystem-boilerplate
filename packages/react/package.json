@@ -7,6 +7,10 @@
     ".": {
       "import": "./dist/components.js",
       "types": "./dist/components.d.ts"
+    },
+    "./next": {
+      "import": "./dist/next.js",
+      "types": "./dist/next.d.ts"
     }
   },
   "repository": {
@@ -26,6 +30,7 @@
   "dependencies": {
     "@placid/core": "workspace:*",
     "@stencil/react-output-target": "^1.0.3",
+    "@stencil/ssr": "^0.1.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   }

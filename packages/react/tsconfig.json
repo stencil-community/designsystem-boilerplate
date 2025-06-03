@@ -5,6 +5,7 @@
     "experimentalDecorators": true,
     "lib": [
       "dom",
+      "dom.iterable",
       "es2022"
     ],
     "declaration": true,
