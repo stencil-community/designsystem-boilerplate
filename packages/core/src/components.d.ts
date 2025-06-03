@@ -23,6 +23,7 @@ export namespace Components {
     interface MyCounter {
         /**
           * What the counter should start at
+          * @default 0
          */
         "startCount": number;
     }
@@ -63,6 +64,7 @@ declare namespace LocalJSX {
     interface MyCounter {
         /**
           * What the counter should start at
+          * @default 0
          */
         "startCount"?: number;
     }
