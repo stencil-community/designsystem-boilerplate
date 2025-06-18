@@ -1,8 +1,14 @@
 packages:
-  # demo apps will live in the apps directory
-  - 'apps/**'
-  # stencil packages will live in the packages directory
-  - 'packages/*'
-  - 'packages/angular-workspace/**'
-  # exclude packages that are inside test directories
+  - apps/**
+  - packages/*
+  - packages/angular-workspace/**
   - '!**/test/**'
+onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - '@tailwindcss/oxide'
+  - esbuild
+  - lmdb
+  - msgpackr-extract
+  - nice-napi
+  - puppeteer
+  - sharp
