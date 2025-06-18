@@ -11,6 +11,10 @@
     "./next": {
       "import": "./dist/next.js",
       "types": "./dist/next.d.ts"
+    },
+    "./vite-ssr": {
+      "import": "./dist/vite-ssr.js",
+      "types": "./dist/vite-ssr.d.ts"
     }
   },
   "repository": {
