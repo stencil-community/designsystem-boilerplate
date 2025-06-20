@@ -20,7 +20,7 @@ export default defineConfig({
         v3_lazyRouteDiscovery: true,
       },
     }),
-    viteSSR,
+    viteSSR(),
     tsconfigPaths(),
   ],
 });
