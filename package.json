@@ -12,6 +12,7 @@
     "apps:build:vue": "pnpm --filter @apps/vue run build",
     "apps:build:next": "pnpm --filter @apps/next run build",
     "apps:build:nuxt": "pnpm --filter @apps/nuxt run build",
+    "apps:build:remix": "pnpm --filter @apps/remix run build",
     "apps:build:storybook": "pnpm --filter @apps/storybook run build",
     "build": "run-s build:*",
     "build:core": "pnpm --filter @placid/core run build",
@@ -24,6 +25,7 @@
     "start:vue": "pnpm --filter @apps/vue run start",
     "start:next": "pnpm --filter @apps/next run start",
     "start:nuxt": "pnpm --filter @apps/nuxt run start",
+    "start:remix": "pnpm --filter @apps/remix run start",
     "start:angular": "pnpm --filter @apps/angular run start",
     "start:storybook": "pnpm --filter @apps/storybook run start"
   },
