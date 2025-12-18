@@ -25,7 +25,7 @@ This projects provides a very basic setup to build a scaleable design system usi
 git clone https://github.com/stencil-community/designsystem-boilerplate.git ./my-project
 ```
 
-he project publishes its wrapper packages under the `@placid/*` namespace. Ensure you update all package.json files in the `/packages/*` directory to reflect your specific metadata.
+The project publishes its wrapper packages under the `@placid/*` namespace. Ensure you update all package.json files in the `/packages/*` directory to reflect your specific metadata.
 
 Before we continue let's make sure to install all dependencies and setup the projects:
 
@@ -37,10 +37,10 @@ pnpm install
 
 The project is structured in several sub-packages, some are framework wrappers that bundle your Stencil component into the framework of your choice, others showcases how to use them in an actual project. These packages as structured as follows:
 
-- `/packages/core`: your Stencil project that contains raw Stencil components, published as `@placid/core`
-- `/packages/react`: Stencil wrapper for React based projects, e.g. Next.js or React, published as `@placid/react`
-- `/packages/vue`: Stencil wrapper for Vue based projects, published as `@placid/vue`
-- `/packages/angular-workspace/projects/angular`: Stencil wrapper for Angular components, published as `@placid/angular`
+- [`/packages/core`](packages/core/readme.md): your Stencil project that contains raw Stencil components, published as `@placid/core`
+- [`/packages/react`](packages/react/readme.md): Stencil wrapper for React based projects, e.g. Next.js or React, published as `@placid/react`
+- [`/packages/vue`](packages/vue/readme.md): Stencil wrapper for Vue based projects, published as `@placid/vue`
+- [`/packages/angular`](packages/angular/readme.md): Stencil wrapper for Angular components, published as `@placid/angular`
 
 You can see how your users can embed the components in our demo apps:
 

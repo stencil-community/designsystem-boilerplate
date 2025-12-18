@@ -47,17 +47,18 @@
     "loader/"
   ],
   "scripts": {
-    "build": "stencil build",
+    "build": "stencil build && pnpm copy:css",
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
-    "generate": "stencil generate"
+    "generate": "stencil generate",
+    "copy:css": "node scripts/copy-css.js"
   },
   "devDependencies": {
-    "@stencil/angular-output-target": "^0.10.2",
+    "@stencil/angular-output-target": "^1.1.1",
     "@stencil/react-output-target": "^1.0.3",
     "@stencil/vue-output-target": "^0.10.7",
-    "@stencil/core": "^4.32.0",
+    "@stencil/core": "^4.39.0",
     "@types/jest": "^29.5.14",
     "@types/node": "^22.15.29",
     "jest": "^29.7.0",
