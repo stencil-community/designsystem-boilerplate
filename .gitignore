@@ -131,3 +131,10 @@ dist
 
 packages/core/hydrate
 packages/core/components
+
+$RECYCLE.BIN/
+
+.DS_Store
+Thumbs.db
+UserInterfaceState.xcuserstate
+.env
