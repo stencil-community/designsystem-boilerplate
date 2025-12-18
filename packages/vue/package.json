@@ -16,7 +16,8 @@
     ".": {
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
-    }
+    },
+    "./css/*": "./dist/css/*"
   },
   "module": "./dist/index.js",
   "devDependencies": {

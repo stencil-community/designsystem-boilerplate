@@ -56,3 +56,11 @@ When you build your Stencil project, The `@stencil/angular-output-target` handle
 ```scss
 @import "@placid/angular/css/placid.css";
 ```
+
+## Build
+
+Run `pnpm --filter @placid/angular build` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+## Publishing
+
+After building your library, go to the dist folder `cd dist` and run `npm publish`.

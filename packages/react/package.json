@@ -15,7 +15,8 @@
     "./vite-ssr": {
       "import": "./dist/vite-ssr.js",
       "types": "./dist/vite-ssr.d.ts"
-    }
+    },
+    "./css/*": "./dist/css/*"
   },
   "repository": {
     "type": "git",

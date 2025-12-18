@@ -6,6 +6,7 @@ import { vueOutputTarget } from '@stencil/vue-output-target';
 
 export const config: Config = {
   namespace: 'core',
+  globalStyle: 'src/styles/placid.css',
   outputTargets: [
     {
       type: 'dist',
