@@ -1,0 +1,42 @@
+{
+  "name": "@placid/angular",
+  "version": "0.0.1",
+  "author": "",
+  "description": "",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "ng-packagr -p ng-package.json"
+  },
+  "module": "./dist/fesm2022/placid-angular.mjs",
+  "typings": "./dist/index.d.ts",
+  "files": [
+    "dist/",
+    "css/"
+  ],
+  "exports": {
+    "./css/*": "./css/*",
+    "./package.json": {
+      "default": "./dist/package.json"
+    },
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/fesm2022/placid-angular.mjs"
+    }
+  },
+  "dependencies": {
+    "@placid/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@angular/common": "^20.3.15",
+    "@angular/core": "^20.3.15",
+    "ng-packagr": "^20.3.2",
+    "rxjs": "^7.8.2",
+    "tslib": "^2.8.1"
+  },
+  "peerDependencies": {
+    "@angular/common": ">=20.3.15",
+    "@angular/core": ">=20.3.15"
+  },
+  "sideEffects": false
+}
